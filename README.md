@@ -15,7 +15,7 @@ config.py: this contains the various configuration parameters which will be used
 
 To run, use:
 
-python train.py
+<b>python train.py</b>
 
 This should work with most torch versions, and can work on both CPU and GPU.
 
