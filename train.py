@@ -85,7 +85,7 @@ def run_experiment():
     model = Model()
 
     criterion = nn.CrossEntropyLoss(reduction='mean')
-    optimizer = optim.Adam(model.parameters(), lr=config.learning_rate, weight_decay=1e-7)
+    optimizer = optim.Adam(model.parameters(), lr=config.learning_rate, weight_decay=config.weight_decay)
 
     tr_dataset = get_mnist_dataset('./data/', True, download=True)  # TrainDataset()  # A custom dataloader may be needed, in which case use TrainDataset()
     val_dataset = get_mnist_dataset('./data/', False, download=True)  # ValidationDataset() # A custom dataloader may be needed, in which case use ValidationDataset()
