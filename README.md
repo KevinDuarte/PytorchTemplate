@@ -4,10 +4,10 @@ This repository contains my template for Pytorch projects. It contains code to t
 
 This template contains 4 python files:
 
-train.py: this contains the training/validation code.\\
-model.py: this contains the model (network architecture) code.\\
-dataloader.py: this contains the dataloader template which will be dataset specific.\\
-config.py: this contains the various configuration parameters which will be used in the other files.\\
+train.py: this contains the training/validation code.\n
+model.py: this contains the model (network architecture) code.\n
+dataloader.py: this contains the dataloader template which will be dataset specific.\n
+config.py: this contains the various configuration parameters which will be used in the other files.\n
 
 
 To run, use:
