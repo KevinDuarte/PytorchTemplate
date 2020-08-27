@@ -120,7 +120,7 @@ def run_experiment():
 			torch.save(states, save_file_path)
 			print('Model saved ', str(save_file_path))
 
-		print('Training Finished')
+		print('Training Finished') 
 
 
 if __name__ == '__main__':
