@@ -90,8 +90,8 @@ def run_experiment():
     tr_dataset = get_mnist_dataset('./data/', True, download=True)  # TrainDataset()  # A custom dataloader may be needed, in which case use TrainDataset()
     val_dataset = get_mnist_dataset('./data/', False, download=True)  # ValidationDataset() # A custom dataloader may be needed, in which case use ValidationDataset()
 	
-	tr_dataloader = DataLoader(tr_dataset, batch_size=config.batch_size, shuffle=True)
-	val_dataloader = DataLoader(val_dataset, batch_size=config.batch_size, shuffle=False)
+    tr_dataloader = DataLoader(tr_dataset, batch_size=config.batch_size, shuffle=True)
+    val_dataloader = DataLoader(val_dataset, batch_size=config.batch_size, shuffle=False)
 
     best_loss = 1000000
 	for epoch in range(1, config.n_epochs + 1):
@@ -111,12 +111,12 @@ def run_experiment():
 				'state_dict': model.state_dict(),
 				'optimizer': optimizer.state_dict(),
 			}
-			
+
 			try:
 				os.mkdir(config.save_dir)
 			except:
 				pass
-			
+
 			torch.save(states, save_file_path)
 			print('Model saved ', str(save_file_path))
 
