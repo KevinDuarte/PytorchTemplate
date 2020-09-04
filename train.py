@@ -6,7 +6,7 @@ from dataloader import TrainDataset, ValidationDataset, DataLoader, get_mnist_da
 import torch.nn as nn
 import torch.optim as optim
 from model import Model
-
+import os
 
 def get_accuracy(y_pred, y):
     y_argmax = torch.argmax(y_pred, -1)
