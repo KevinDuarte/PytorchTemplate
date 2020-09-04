@@ -20,6 +20,13 @@ class TrainDataset(Dataset):
 
     def __getitem__(self, index):
         data = self.data[index]
+        
+        # load image (or video)
+        # perform pre-processing
+        
+        # load label
+        
+        # format image and label
 
         x, y = 0, 0  # placeholder for the sample input(s) and output(s)
 
@@ -35,6 +42,13 @@ class ValidationDataset(Dataset):
 
     def __getitem__(self, index):
         data = self.data[index]
+        
+        # load image (or video)
+        # perform pre-processing
+        
+        # load label
+        
+        # format image and label
 
         x, y = 0, 0  # placeholder for the sample input(s) and output(s)
 
